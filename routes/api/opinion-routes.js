@@ -8,22 +8,22 @@ const {
   deleteOpinion,
   createReaction,
   deleteReaction
-} = require('../../controllers/thought-controller');
+} = require('../../controllers/opinion-controller');
 
-// Set up GET all and POST at /api/thoughts
+// Set up GET all and POST at /api/opinion
 router
   .route('/')
   .get(getAllOpinion)
   .post(createOpinion);
 
-// Set up GET one, PUT, and DELETE at /api/thoughts/:id
+// Set up GET one, PUT, and DELETE at /api/opinion
 router
   .route('/:id')
   .get(getOpinionById)
   .put(updateOpinion)
   .delete(deleteOpinion);
 
-// Post at /api/thoughts/:thoughtId/reactions
+// Post at /api/opinion
 router
   .route('/:opinionId/reactions')
   .post(createReaction);
