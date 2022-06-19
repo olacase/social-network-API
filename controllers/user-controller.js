@@ -1,4 +1,4 @@
-const { User, opinion } = require('../models');
+const { User, Thought } = require('../models');
 
 const userController = {
   // /api/users
@@ -18,7 +18,7 @@ const userController = {
   getUserById({ params }, res) {
     User.findOne({ _id: params.id })
       .populate({
-        path: 'opinion',
+        path: 'thoughts',
         select: '-__v'
       })
       .populate({
@@ -58,16 +58,11 @@ const userController = {
       .catch(err => res.json(err));
   },
 
-  // delete User
-  // deleteUser({ params }, res) {
-  //   User.findOneAndDelete({ _id: params.id })
-  //     .then(dbUserData => res.json(dbUserData))
-  //     .catch(err => res.json(err));
-  // },
+  
 
-  //Delete user and users associated opinions
+  //Delete user and users associated thoughts
   deleteUser({ params }, res) {
-    opinion.deleteMany({ userId: params.id })
+    Thought.deleteMany({ userId: params.id })
       .then(() => {
         User.findOneAndDelete({ userId: params.id })
           .then(dbUserData => {

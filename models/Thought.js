@@ -58,12 +58,12 @@ const ThoughtSchema = new Schema({
     }
 );
 
-opinionSchema.virtual('reactionCount').get(function () {
+ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-// create the opinion model using the opinionSchema
-const opinion = model('opinion', opinionSchema);
+// create the Thought model using the ThoughtSchema
+const Thought = model('Thought', ThoughtSchema);
 
-// export the opinion model
-module.exports = opinion;
+// export the Thought model
+module.exports = Thought;
