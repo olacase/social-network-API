@@ -1,7 +1,5 @@
 # Social-Network-API
 
-![](https://img.shields.io/badge/Created%20by-Victor%20Cesar%20Lopez-blue?style=for-the-badge)  
-![](https://img.shields.io/badge/Database-MongoDB-yellow?style=flat-square&logo=mongoDB)  ![](https://img.shields.io/badge/npm%20package-express-orange?style=flat-square&logo=npm) ![](https://img.shields.io/badge/npm%20package-mongoose-cyan?style=flat-square&logo=npm) ![](https://img.shields.io/badge/npm%20package-moment-%3CCOLOR%3E?style=flat-square&logo=npm)
  ## Table of Contents:  
 [1. Description](#Description)  
 [2. Acceptance Criteria](#Acceptance-Criteria)  
@@ -23,18 +21,13 @@ This is a set of API for a social network that uses a MongoDB database so that t
 - Testing API POST and DELETE routes in Insomnia Core are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
 
 ## Walkthrough Videos
-[User Routes](https://drive.google.com/file/d/1WMXQbCPAECIsU78gSpFk8IejF80_jtpW/view)  
-[Friend Routes](https://drive.google.com/file/d/1a2o-AOOmOIXz8dgTKsC1FvLIaNRoQJJf/view)  
-[Thought Routes](https://drive.google.com/file/d/17ocul_N5VOl4O70y8XEILtf8691lvxEj/view)  
-[Reaction Routes](https://drive.google.com/file/d/1gB0kILBgkD4XEpFXOeq6v5YhxP75W27d/view)  
 
 ## Installation:
-This repo is not to be deployed, if you wanted to, you could by doing the following:  
+
 1. Download the repo files from the link below
-2. You must have mongoDB installed
-3. Run the following at the command line
+2. mongoDB is required
 ```
-    - npm init -y
+    - npm init
     - npm install express
     - npm install mongoose
     - npm install moment
@@ -103,15 +96,15 @@ Testing restful API calls with Insomnia Core
 * `DELETE` remove a reaction by the `reactionId` 
 
 ## License Details: 
- This project is under no license.  
+none  
 
 ## Submission:
- [Github repository](https://github.com/civ187/social-network-API)
+ [Github repository](https://github.com/olacase/social-network-API)
 
 ## Questions:
  Here is a link to my github:  
-https://github.com/civ187  
+https://github.com/olacase
  Email me at:  
-civ187@gmail.com  
-for additional questions
+olacase@gmail.com  
+
 
